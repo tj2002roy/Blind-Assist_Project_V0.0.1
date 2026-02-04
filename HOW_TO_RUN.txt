@@ -1,0 +1,42 @@
+===============================================================
+       BLIND ASSIST PROJECT - QUICK START GUIDE
+===============================================================
+
+HOW TO RUN THIS PROJECT ON A NEW JETSON:
+
+Step 1: Open the Terminal
+---------------------------------------------------------------
+Press [Ctrl] + [Alt] + [T] to open a new terminal window.
+
+
+Step 2: Go to this Folder
+---------------------------------------------------------------
+Type the following command and press Enter:
+(Assuming you pasted this folder on the Desktop)
+
+    cd ~/Desktop/Blind_Assist_Portable
+
+
+Step 3: Run the Auto-Installer
+---------------------------------------------------------------
+Type this command and press Enter:
+
+    ./install_and_run.sh
+
+    * It will ask for your password. Type it and press Enter.
+    * Wait 2-3 minutes for installation to finish.
+    * The camera will start automatically.
+
+
+===============================================================
+TROUBLESHOOTING:
+
+* If it says "Permission Denied", run this command first:
+    chmod +x install_and_run.sh
+
+* If the Camera doesn't open:
+    Check if the ribbon cable is plugged into CAM0 or CAM1.
+    Edit the script 'run_cam.py' and change CAMERA_ID to 0 or 1.
+===============================================================
+
+=========================================Developed by roy_tj======================================
